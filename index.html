@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Spectral+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Main Page</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <button class="scroll_button" name="scroll" type="button"></button>
+      <header class="page_header" id="home">
+        <div class="logo">
+          <a href="#home"><img src="image/logo.png" alt="logo" /></a>
+        </div>
+        <nav class="nav_menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#article" class="nav_link">Статьи</a>
+            </li>
+            <li class="nav_item">
+              <a href="#aboutme" class="nav_link">Обо мне</a>
+            </li>
+            <li class="nav_item">
+              <a href="#portfolio" class="nav_link">Портфолио</a>
+            </li>
+            <li class="nav_item">
+              <a href="#writeme" class="nav_link">Написать мне</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page_main" id="article">
+        <div class="head_main">
+          <h1>Все статьи</h1>
+          <div class="main_select">
+            <select id="select_id" name="select">
+              <option value="Путешествия">Путешествия</option>
+              <option value="Город">Город</option>
+              <option value="Книги">Книги</option>
+              <option value="Фотографии">Фотографии</option>
+              <option value="Рецепты">Рецепты</option>
+              <option value="Все статьи">Все статьи</option>
+              <option value="Выбрать тему" selected disabled hidden>
+                Выбрать тему
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="section_article">
+          <article class="main_article" data-name="Путешествия">
+            <img
+              class="image_article city"
+              src="image/pages-1.jpg"
+              alt="photo_article"
+            />
+            <a href="motivation.html">Путешествие в Берлин в августе</a>
+            <p>
+              Летний месяц я провела в столице Германии вместе с друзьями. И вот
+              как это было!
+            </p>
+            <div class="data_time">
+              <p>Теги: <a href="motivation.html">путешествия</a></p>
+              <time datetime="2020-09-29">29.09.2020</time>
+            </div>
+          </article>
+          <article class="main_article" data-name="Город">
+            <img
+              class="image_article city"
+              src="image/pages-2.jpg"
+              alt="photo_article"
+            />
+            <a href="motivation.html">Где выпить колдбрю в Москве</a>
+            <p>
+              Собрала для вас список любимых кофеен, где подают лучший летний
+              напиток.
+            </p>
+            <div class="data_time">
+              <p>Теги: <a href="motivation.html">город</a></p>
+              <time datetime="2020-07-24">24.07.2020</time>
+            </div>
+          </article>
+          <article class="main_article" data-name="Книги">
+            <img
+              class="image_article city"
+              src="image/pages-3.jpg"
+              alt="photo_article"
+            />
+            <a href="motivation.html">Прочитано: книжные рекомендации</a>
+            <p>
+              Рассказываю о прочитанных за последнее время книгах: фавориты и
+              провалы.
+            </p>
+            <div class="data_time">
+              <p>Теги: <a href="motivation.html">книги</a></p>
+              <time datetime="2020-07-15">15.07.2020</time>
+            </div>
+          </article>
+        </div>
+        <div class="footer_article">
+          <article class="main_article article_item" data-name="Фотографии">
+            <a href="motivation.html">Снимки на плёнку</a>
+            <p>
+              Поделилась с вами весенними фотографиями, и секретами удачных
+              снимков.
+            </p>
+            <div class="data_time">
+              <p>
+                Теги:
+                <a class="not_hover" href="motivation.html">фотографии</a>
+              </p>
+              <time datetime="2020-06-29">29.06.2020</time>
+            </div>
+          </article>
+          <article class="main_article article_item" data-name="Рецепты">
+            <a href="motivation.html">Домашний чизкейк</a>
+            <p>
+              Что может быть лучше чизкейка с сезонными ягодами? Только домашний
+              чизкейк!
+            </p>
+            <div class="data_time">
+              <p>
+                Теги:
+                <a class="not_hover" href="motivation.html">рецепты</a>
+              </p>
+              <time datetime="2020-06-24">24.06.2020</time>
+            </div>
+          </article>
+        </div>
+        <div class="btn_main">
+          <button type="button" name="button" id="btn" value="Показать ещё">
+            Показать ещё
+          </button>
+        </div>
+      </main>
+      <section class="about_me" id="aboutme">
+        <h2>Обо мне</h2>
+        <img class="photo_me" src="image/image-3.jpg" alt="me" />
+        <div class="about_info">
+          <p>
+            Всем привет! Меня зовут Аня, и это мой личный блог.<br />
+            Здесь ты найдёшь рассказы о моих путешествиях, снимки<br />
+            на плёнку, рецепты, обзоры на книги. В общем, тексты о том,<br />
+            что мне инетресно.
+          </p>
+          <br />
+
+          <p>
+            Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио.
+            Ниже размещены несколько моих лучших<br />
+            рабочих текстов. Буду рада новым сотрудничествам!<br />
+          </p>
+
+          <p>
+            Если вы хотите написать мне — это можно сделать в соцсетях<br />
+            или через <a href="#form" id="linken_id">форму</a>. Всегда приятно
+            услышать обратную связь<br />
+            от читателей и познакомиться поближе.
+          </p>
+          <br />
+
+          <p>Приятного чтения!</p>
+
+          <blockquote>
+            Я верю, что каждый раз пробуя новое, выходящее за зону моего
+            комфорта, я действительно узнаю настояющую себя.
+          </blockquote>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <h2 class="portfolio_header">Портфолио</h2>
+        <div class="portfolio_works">
+          <div class="portfolio_item">
+            <img class="image_item" src="image/Mask1.jpg" alt="HTML Academy" />
+            <div class="text_content">
+              <h3>Блог HTML Academy</h3>
+              <h4>«Как учиться продуктивно»</h4>
+              <br />
+              <p>
+                Про основные методы обучения, которые помогут быстро и надолго
+                запомнить информацию.
+              </p>
+            </div>
+          </div>
+          <div class="portfolio_item">
+            <img class="image_item" src="image/Mask-2.jpg" alt="img-2" />
+            <div class="text_content">
+              <h3>Журнал «LNK»</h3>
+              <h4>
+                «Зачем поцели нужны человеку?<br />
+                И какие они бывают»
+              </h4>
+              <br />
+              <p>
+                Поцелуи — повсеместная ежедневная практика. Но зачем люди
+                целуются? Какие смысли вкладывают в этот ритуал? И где корни
+                этой практики?
+              </p>
+            </div>
+          </div>
+          <div class="portfolio_item">
+            <img class="image_item" src="image/Mask3.jpg" alt="«Т — Л»" />
+            <div class="text_content">
+              <h3>Журнал «Т — Л»</h3>
+              <h4>
+                «Советы по эффективной<br />
+                удалённой работе»
+              </h4>
+              <br />
+              <p>
+                Поделилась лайфхаками, которые помогают<br />
+                мне работать продуктивно из дома.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn_portfolio">
+          <button
+            type="button"
+            name="btn"
+            class="btn"
+            id="btn_input"
+            value="Показать ещё"
+          >
+            Показать ещё
+          </button>
+        </div>
+      </section>
+      <section class="write_me" id="writeme">
+        <h2>Написать мне</h2>
+        <div class="form">
+          <form class="form_input" action="" id="form">
+            <div class="label_name">
+              <label for="name_id">Ваше имя</label><br />
+              <input
+                type="text"
+                name="name"
+                id="name_id"
+                placeholder="Иван Иванов"
+                required
+              />
+            </div>
+
+            <div class="label_email">
+              <label for="email_id">Email</label><br />
+              <input
+                type="email"
+                name="email"
+                id="email_id"
+                placeholder="google@gmail.com"
+                required
+              />
+            </div>
+            <div class="textarea_form">
+              <label for="text_id">Сообщение</label><br />
+              <textarea
+                class="textarea_id"
+                id="text_id"
+                maxlength="200"
+                placeholder="Напишите здесь ваше сообщение."
+              ></textarea>
+              <span
+                >Символов использованно:
+                <output for="text_id" class="count_letter_min">0</output>
+                /200</span
+              >
+            </div>
+            <div class="btn_submit">
+              <button
+                class="btn_submit_button"
+                type="submit"
+                name="btn_submit"
+                id="btn_submit"
+                value="Отправить"
+                disabled
+              >
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="main_footer">
+        <ul class="footer_menu">
+          <li class="footer_list"><a href="#allarticle">ВК</a></li>
+          <li class="footer_list"><a href="#aboutme">Телеграм</a></li>
+          <li class="footer_list"><a href="#portfolio">Инстаграм</a></li>
+          <li class="footer_list"><a href="#writeme">Твиттер</a></li>
+        </ul>
+      </footer>
+      <script src="main_js/form.js"></script>
+      <script src="main_js/select.js"></script>
+      <script src="main_js/scroll.js"></script>
+    </div>
+  </body>
+</html>
